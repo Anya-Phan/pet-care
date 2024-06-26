@@ -266,3 +266,257 @@ body {
     margin: 20px 0;
     border-radius: 4px;
 }
+
+/* About */
+.about {
+    padding: 278px 0 146px;
+}
+
+.about__text {
+    width: 477px;
+}
+
+.about__subheading {
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    color: #5e6085;
+}
+
+.about__heading {
+    font-family: "Sora", sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.18;
+    color: var(--heading-color);
+    padding: 15px 0 24px;
+}
+
+.about__subtitle {
+    font-weight: 400;
+    line-height: 1.874;
+}
+
+.about__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 54px;
+    row-gap: 34px;
+    column-gap: 36px;
+}
+
+.about__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.about__cert {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #48496a;
+    white-space: nowrap;
+}
+
+.about__check {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 15px -3px #ff5d31b0;
+    text-align: center;
+    line-height: 24px;
+}
+
+.about__background {
+    margin-top: 146px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    box-shadow: 11px 18px 65px 0px #ff9b791f;
+    width: 494px;
+    height: 336px;
+    border-radius: 16px;
+}
+
+.about__images {
+    position: relative;
+}
+
+.about__img {
+    position: absolute;
+
+    bottom: -51px;
+    width: 450px;
+    height: 602px;
+    transform: scaleX(-1);
+    object-fit: cover;
+    object-position: 55% center;
+    clip: rect(0px, 450px, 551px, 0px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.about__decor {
+    position: absolute;
+    top: 83px;
+    left: 411px;
+    z-index: -1;
+}
+.about__quantity {
+    position: absolute;
+    width: 136px;
+    height: 156px;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px #55f0ff2b;
+    text-align: center;
+    bottom: 238px;
+    right: 447px;
+}
+
+.abt-quantity__heading {
+    font-family: "Sora", sans-serif;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    padding-top: 31px;
+    display: block;
+}
+
+.abt-quantity__subtitle {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.43;
+    margin: 14px auto 29px;
+    width: 83px;
+}
+
+.about__paw {
+    position: absolute;
+    right: 447px;
+    bottom: 380px;
+    z-index: 1;
+}
+
+/* Vaction */
+.vacation__images {
+    position: relative;
+    width: 458px;
+    height: 500px;
+    box-shadow: 0px 17px 77px -8px #bea58b2b;
+    border: 2px solid #ffffff;
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    border-radius: 18px;
+}
+
+.vacation__dog {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.vacation__decor {
+    position: absolute;
+}
+
+.vacation__text {
+    width: 557px;
+    height: 459px;
+}
+
+.vacation__heading {
+    font-family: "Sora", sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--heading-color);
+}
+
+.vacation__subtitle {
+    font-weight: 400;
+    line-height: 1.875;
+    padding: 24px 0 52px;
+}
+
+.vacation__tabs {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.vacation__tab {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.vacation__tab:hover {
+    cursor: pointer;
+}
+
+.tab__heading {
+    font-family: "Sora", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--heading-color);
+}
+.vacation__pane-wrap {
+    position: relative;
+    overflow: hidden;
+    max-width: 391px;
+    height: 500px;
+}
+.vacation__panes {
+    position: absolute;
+    left: 0;
+    display: flex;
+    z-index: 5;
+    transition: 0.5s linear;
+}
+
+.vacation__pane {
+    min-width: 391px;
+    z-index: 1;
+}
+
+.pane__subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.72;
+    padding: 36px 0 32px;
+}
+
+.pane__detail {
+    font-weight: 500;
+    line-height: 1;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.pane__detail:hover {
+    text-decoration: underline;
+}
+
+.vacation__active {
+    margin-top: 10px;
+    position: relative;
+}
+
+.vacation__slide {
+    width: 557px;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0.07;
+    border-radius: 2px;
+}
+
+.vacation__line-act {
+    position: absolute;
+    width: 95px;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    transition: 0.5s linear;
+}
