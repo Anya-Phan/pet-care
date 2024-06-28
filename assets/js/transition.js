@@ -16,3 +16,16 @@ tabUI.forEach((tab, index) => {
         paneWrap.style.left = -1 * offsetActive + "px";
     };
 });
+
+const listCare = $$(".price__list");
+const isBoxChecked = $("#price__switch-check");
+
+isBoxChecked.onchange = function () {
+    if (isBoxChecked.checked === false) {
+        listCare[1].style.display = "none";
+        listCare[0].style.display = "grid";
+    } else {
+        listCare[0].style.display = "none";
+        listCare[1].style.display = "grid";
+    }
+};

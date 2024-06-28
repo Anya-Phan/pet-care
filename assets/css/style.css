@@ -35,6 +35,25 @@ body {
     scale: 0.9;
 }
 
+.btn-primary {
+    margin-top: 45px;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 31px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
 /* Animation */
 @keyframes wave {
     from {
@@ -640,20 +659,227 @@ body {
     max-width: 100%;
 }
 
-.services__btn {
-    margin-top: 45px;
-    display: inline-block;
-    padding: 20px 40px;
-    border-radius: 31px;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    font-weight: 500;
-    line-height: 1;
-    text-decoration: none;
-    background-color: transparent;
+/* Staff */
+.pet-staff {
+    text-align: center;
 }
 
-.services__btn:hover {
+.pet-staff__subheading {
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #5e6085;
+}
+
+.pet-staff__heading {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--heading-color);
+    margin: 15px 0 78px;
+}
+
+.staff__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+}
+
+.staff__avatar {
+    position: relative;
+    max-width: 100%;
+    border-radius: 0 0 130px 130px;
+}
+
+.staff__img {
+    max-width: 234px;
+    border-radius: 0 0 130px 130px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.staff__background {
+    width: 234px;
+    height: 266px;
+    border-radius: 130px;
+    margin: 0 auto;
+}
+
+.staff__decor {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.staff__item:nth-child(even) .staff__decor {
+    top: 0;
+}
+
+.staff__position {
+    margin: 34px 0 14px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.staff__name {
+    font-family: "Sora", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--heading-color);
+}
+
+/* Pricing */
+
+.price {
+    margin: 130px 0;
+    padding: 86px 0;
+    background: #fff6ed;
+}
+
+.price__heading {
+    font-family: "Sora", sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+.price__subtitle {
+    font-weight: 400;
+    line-height: 1.875;
+    text-align: center;
+    max-width: 709px;
+    margin: auto;
+}
+
+.price__time {
+    max-width: fit-content;
+    height: 56px;
+    border: 1px solid #ff5b2e;
+    border-radius: 31px;
+    margin: 38px auto 56px;
+    position: relative;
+}
+
+.price__choice {
+    color: var(--primary-color);
+    margin: 0 40px;
+    z-index: 1;
+}
+.price__wrap-btn {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    height: 56px;
+    position: relative;
+}
+
+.price__wrap-btn::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 56px;
+    border-radius: 31px;
     background-color: var(--primary-color);
+    transition: 0.2s linear;
+}
+
+.price__wrap-btn:hover {
+    cursor: pointer;
+}
+
+#price__switch-check:checked + .price__wrap-btn::after {
+    left: 50%;
+}
+
+#price__switch-check:checked + .price__wrap-btn .price__choice:nth-child(2),
+#price__switch-check:not(:checked)
+    + .price__wrap-btn
+    .price__choice:nth-child(1) {
     color: #fff;
+}
+
+.price__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+}
+
+.price__list:nth-child(2) {
+    display: none;
+}
+
+.price__item {
+    padding: 30px 28px 43px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.pr-item__subheading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #ff5b2e;
+}
+
+.pr-item__heading {
+    font-family: "Sora", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #3f4065;
+    margin: 8px 0 24px;
+}
+
+.pr-item__money {
+    font-family: "Sora", sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--heading-color);
+    display: block;
+}
+
+.pr-item__btn {
+    margin: 22px 0 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.pr-item__services {
+    margin-top: -18px;
+}
+
+.pr-item__item-service {
+    display: flex;
+    align-items: center;
+    gap: 14.2px;
+    margin-top: 18px;
+}
+
+.pr-item__item-service::before {
+    content: url(../image/price__marker.svg);
+}
+
+.pr-item__item-service.unsupport::before {
+    content: url(../image/price__dis-marker.svg);
+}
+
+.price__discount {
+    display: none;
+}
+
+#price__switch-check:checked ~ .price__discount {
+    display: block;
+    position: absolute;
+    right: -111px;
+    bottom: 29px;
 }
