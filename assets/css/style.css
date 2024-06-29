@@ -735,7 +735,7 @@ body {
 /* Pricing */
 
 .price {
-    margin: 130px 0;
+    margin: 130px 0 110px;
     padding: 86px 0;
     background: #fff6ed;
 }
@@ -882,4 +882,127 @@ body {
     position: absolute;
     right: -111px;
     bottom: 29px;
+}
+
+/* Review */
+.reviews__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews__wrap-svg-left,
+.reviews__wrap-svg-right {
+    padding: 16px;
+    border: 1.5px solid #ffd1c4;
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.reviews__wrap-svg-left:hover,
+.reviews__wrap-svg-right:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+.review__arrow-left {
+    display: block;
+}
+
+.review__arrow-right {
+    rotate: 180deg;
+    display: block;
+}
+
+.reviews__wrap {
+    overflow: hidden;
+}
+
+.reviews__list {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.review__item {
+    width: 100%;
+    padding-left: 44px;
+    padding-right: 76px;
+    gap: 115px;
+    align-items: center;
+    flex-shrink: 0;
+}
+.review__img {
+    position: relative;
+}
+.review__avar {
+    max-width: 274px;
+    border-radius: 0 0 137px 137px;
+    position: absolute;
+    bottom: 0;
+}
+.review__background {
+    width: 274px;
+    height: 350px;
+    border-radius: 137px;
+    z-index: -1;
+}
+.review__text {
+    flex-grow: 1;
+}
+
+.review__heading {
+    font-family: "Sora", sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--heading-color);
+}
+.review__subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000;
+    margin: 24px 0 34px;
+}
+.review__name {
+    font-family: "Sora", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #282828;
+}
+
+.review__name::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #000;
+    vertical-align: middle;
+}
+
+.reviews__slide-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    margin-top: 56px;
+}
+
+.review__dot:hover {
+    cursor: pointer;
+}
+
+.review__dot.active {
+    background-color: var(--primary-color);
 }
