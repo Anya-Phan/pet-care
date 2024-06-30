@@ -11,6 +11,7 @@ html {
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
     color: #656689;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -72,8 +73,13 @@ button {
 
 /* Header */
 .header-sticky {
+    width: 100%;
     background-color: #fffaf5;
     padding: 26px 0 12px;
+    position: sticky;
+    top: -12px;
+    left: 0;
+    z-index: 2;
 }
 .header__row {
     align-items: center;
@@ -91,6 +97,7 @@ button {
     text-decoration: none;
     display: block;
     color: #656689;
+    background-color: #fffaf5;
 }
 
 .header__nav-item::after {
@@ -108,6 +115,10 @@ button {
 .header__nav-item:hover::after {
     z-index: 1;
     cursor: pointer;
+}
+
+.header__nav-item.active::after {
+    z-index: 1;
 }
 
 .header__btn {
@@ -497,7 +508,7 @@ button {
     position: absolute;
     left: 0;
     display: flex;
-    z-index: 5;
+    z-index: 1;
     transition: 0.5s linear;
 }
 
@@ -1116,9 +1127,6 @@ button {
     background-color: #fff6ed;
     position: absolute;
     left: 0;
-}
-
-.footer__logo {
 }
 
 .footer__form {

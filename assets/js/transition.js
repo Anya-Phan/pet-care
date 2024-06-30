@@ -76,3 +76,16 @@ arrowRight.onclick = function () {
     }
     nextItem(listDots[currentIndex], currentIndex);
 };
+
+/* Transition for header*/
+const navItems = $$(".header__nav-item");
+navItems.forEach((item, index) => {
+    item.onclick = function () {
+        navItems.forEach((item) => {
+            if (item.classList.contains("active")) {
+                item.classList.remove("active");
+            }
+        });
+        item.classList.add("active");
+    };
+});
